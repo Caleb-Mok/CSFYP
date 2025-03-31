@@ -1,6 +1,13 @@
 
 # VR Visual Field Testing System - README
 
+**I have deleted:**
+* `src/IntegratedVFTnR/Assets/ViveSr` 
+* `src/IntegratedVFTnR/Assets/ViveSR_Experience` 
+  
+**as they are too massive to upload.**
+**Full src folder can be found here: https://github.com/Caleb-Mok/CSFYP**
+
 ## System Overview
 
 This project is a virtual reality-based visual field testing platform designed using Unity and the HTC Vive Pro Eye. It incorporates real-time eye tracking, stimulus presentation, gaze-based feedback, and automatic data logging and reporting.

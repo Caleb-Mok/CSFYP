@@ -1,0 +1,135 @@
+    
+\documentclass[11pt]{article}
+\usepackage{times}
+    \usepackage{fullpage}
+    
+    \title{Visual Field Mapping Medical Device}
+    \author{Mok Kah Hou - 2689719M}
+
+    \begin{document}
+    \maketitle
+    
+    
+     
+
+\section{Status report}
+
+\subsection{Proposal}\label{proposal}
+
+\subsubsection{Aims}\label{aims}
+
+% \emph{{[}Clearly state what the project is intended to do. This should
+% be something which is measurable; it should be possible to tell if you
+% succeeded{]}}
+
+The aim of this project is to design and develop a deployable application/platform within the VR space that allows users to have a cheap and easy method to map their peripheral visual field, get a useful visual field map, and use that for cases such as possible early diagnostics for any signs of visual pathway impairments, or even visual field correction/remapping efforts. This project aims to address the existing challenges in traditional visual field testing, including cost, accessibility, and reliance on clinical settings, by using VR technology to provide an innovative and user-friendly solution.
+
+\subsubsection{Motivation}\label{motivation}
+
+% \emph{{[}Clearly motivate the purpose of your project; why someone would
+% care about what you are doing{]}}
+% Previous work implemented VFT in VR, my work, add in eye tracking for fixation losses and also develop a deployable app/platform to combine VFTs and corrective remapping in one codebase
+
+Traditional visual field testing methods are often inaccessible, require specialised equipment and trained medical professionals, and are potentially costly. For example, the Optos Daytona cost \$85,000, compared to a \$400 generic VR headset. This results in limited access to diagnostics especially in low-income regions, therefore many people with potential visual impairments may hesitate to seek diagnosis or treatment. Even worse, due to the inaccessibility of these tests, some people may remain completely unaware of their visual field defects, continuing their daily lives without recognising the potential risks to their health and safety.
+
+Virtual reality (VR) technology is a promising solution to these challenges. As a new and rapidly advancing field, VR offers the potential to create a fast, simple, and affordable alternative to visual field testing. While it can only serve as a rough estimate compared to clinical diagnostics, such a VR-based approach could make visual field assessment more accessible and encourage early diagnosis of visual impairments, so that they can take more proactive steps regarding their eyesight.
+
+
+\subsection{Progress}\label{progress}
+The following are progress that are made building on existing VR technology and Visual Field Mapping research.
+
+% \emph{{[}Briefly state your progress so far, as a bulleted list{]}}
+\begin{itemize}
+    \item Initialized a Unity VR project with the required assets.
+    \item Created and configured a shared repository on GitLab for version control and collaboration.
+    \item Conducted an ongoing review of key research papers on visual field mapping and VR technology. Key insights include the importance of fixation losses and user interaction design for VR applications.
+    \item Developed a flow diagram that outlines the project's structure, highlighting the core components such as data processing, and testing mechanisms.
+    \item \textbf{Prototyping}:
+    \begin{enumerate}
+        \item Created a Figma prototype to visualise the user experience.
+        \item Built a simple Main Menu and Testing Scene in Unity to demonstrate the initial functionality.
+        \item Implemented a basic moving dot mechanism in the Testing Scene to simulate stimuli for visual field mapping.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Issues and risks}\label{issues-and-risks}
+
+\subsubsection{Issues}\label{issues}
+
+% \emph{{[}What problems have you had so far, that have held up the
+% project?{]}}
+
+\begin{itemize}
+    \item High workload from other major and second project have reduced available time this semester to progress on this projects. \newline
+    \textbf{Solution}: More time available during second semester to dedicate to this project
+    \item Limited access to specialised computer facilities and permission to install required software in the office, despite multiple request support team have not responded. \newline
+    \textbf{Solution}: Escalate the issue in person, instead of through email and online help desk. 
+\end{itemize}
+
+Both constraints resulted in much more effort had to be given into project for minimal progress, but more time is available to be allocated in the remaining semester.
+
+\subsubsection{Risks}\label{risks}
+
+% \emph{{[}What problems do you foresee in the future and how will you
+% mitigate them?{]}}
+
+\begin{itemize}
+    \item Unavailable to get timeous access to specialised computer facilities. 
+    \newline
+    \textbf{Solution}: Escalate the issue in person, instead of through email and online help desk. 
+    \item VR induced motion sickness/ epilepsy may affect user health and diagnosis accuracy. \newline
+    \textbf{Solution}: User ethics \& consent form covering medical disclaimers to ensure there is no past history of related symptoms.
+    \item Device cross-platform compatibility, close integration of 2 different modules hard to implement in C\# architecture, or cost of integration outweighs the benefit.
+    \newline
+    \textbf{Solution}: Proceed with complete, independent, and stand-alone module.
+    \item Limited testing environment and testers + no access to traditional testing methods
+    \newline
+    \textbf{Solution}: Begin recruiting a cohort of user testers, targeting individuals from various demographics, including those with known visual impairments.
+    \item Insufficient time could delay secondary features or reduce project quality.
+    \newline
+    \textbf{Solution}: Focus on core functionalities before expanding to additional features.
+\end{itemize}
+
+\subsection{Plan}\label{plan}
+
+% \emph{{[}Time plan, in roughly weekly to monthly blocks, up until
+% submission week{]}}
+\begin{enumerate}
+    \item December 13-31: \textbf{Framework Development and Refinement}
+    \begin{itemize}
+        \item Refine the current Unity prototype by improving dot movement accuracy and timing.
+        \item Christmas break
+        \item Add basic user feedback mechanisms to simulate responses.
+        \item Develop a draft user interface for initial testing.
+    \end{itemize}
+    \textbf{Milestone}: A functional prototype with a basic feedback loop.
+    \item January 1-31: \textbf{Feature Development}
+    \begin{itemize}
+        \item Add eye tracking + scene view correction
+        \item Add response recording, saving, exporting
+        \item Add data visualization as visual field maps from exported data
+    \end{itemize}
+    \textbf{Milestone}: A prototype capable of recording, saving, and visualizing user data.
+    \item February 1- 24: \textbf{User Testing and Evaluation}
+    \begin{itemize}
+        \item Recruit a cohort of at least 10 testers, ensuring diverse demographics.
+        \item Implement updates based on user feedback and iterative user testing.
+        \item Validate the system's accuracy against traditional visual field testing methods (if possible).
+    \end{itemize}
+    \textbf{Milestone}: A validated prototype with user-tested improvements.
+    \item February 24-28: Final Development and Optimization
+    \begin{itemize}
+        \item Optimize the application for performance, usability, and compatibility.
+        \item Clean the codebase and document technical details for maintainability.
+    \end{itemize}
+    \textbf{Milestone}: A polished and fully functional application.
+    \item March 1-25: \textbf{Dissertation Writing and Final Submission}
+    \begin{itemize}
+        \item Prepare the final dissertation document, incorporating feedback from reviewers.
+        \item Proofread and submit the dissertation by the March 25 deadline.
+    \end{itemize}
+\end{enumerate}
+
+    
+    
+    \end{document}
